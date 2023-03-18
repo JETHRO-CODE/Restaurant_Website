@@ -1,0 +1,827 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-size: 16px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400px;
+    line-height: 1.5;
+}
+
+.navbar
+{
+    padding: 10px 50px;
+    background: chocolate;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu_container
+{
+    display: flex;
+    flex: 1;
+}
+
+.menu_container ul
+{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.menu_container ul li
+{
+    list-style: none;
+    color: black;
+}
+
+.menu_container ul li a
+{ 
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 15px;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+#home
+{
+    background: black;
+    color: chocolate;
+    padding: none;
+}
+
+.reservation
+{
+    padding: 10px 50px;
+    background: black;
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    justify-content: center;
+}
+
+.reservations1 h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chocolate;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+
+}
+
+.button_container
+{
+    padding-left: 15px;
+    
+}
+
+.reservation_btn
+{
+    border-radius: 10px;
+    background-color: white;
+    color: gray;
+    border-radius: 13px;
+    padding: 5px;
+    text-decoration: none;
+    width: 130px;
+    text-align: left;
+} 
+
+.book_now
+{
+    border-radius: 10px;
+    background-color: chocolate;
+    color: darkgrey;
+    border-radius: 13px;
+    padding: 5px;
+    text-decoration: none;
+    width: 130px;
+}
+
+
+/* ORDER SECTION*/
+
+.order_container
+{
+    display: grid;
+    grid-gap: 20px;
+    margin-left: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(17em,1fr));
+}
+.order_box
+{
+    width: 290px;
+    height: 300px;
+    border-radius: 5px;
+    background: black;
+}
+
+
+.order_img
+{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+
+}
+
+.order_img img
+{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.order_details h3
+{
+    overflow: hidden;
+    margin-top: 1px;
+    background: chocolate;
+    text-align: center;
+}
+
+.order_now
+{
+    width: 130px;
+    background: chocolate;
+    color: darkgrey;
+    border-radius: 13px;
+    margin-top: 12px;
+    margin-left: 80px;
+    padding: 5px 10px;
+}
+
+.delicious
+{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chocolate;
+}
+
+/*Slider styling*/
+
+.slider1
+{
+    background: wheat;
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+}
+
+.slider1 .food_lovers
+{
+    color: chocolate;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.slider_para h1
+{
+    color: chocolate;
+}
+
+.social_links .slider_links
+{
+    color: white;
+}
+
+.slider_para p
+{
+    color: darkgray;
+}
+.slider_container
+{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 250px;
+    margin-top: 30px;
+    background: black;
+    margin-left: 250px;
+    
+}
+
+
+
+.slider_box
+{
+    width: 90%;
+    height: 400px;
+}
+
+.slider_img img
+{
+    width: 100%;
+    height: 250px;
+}
+
+.slider_para
+{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+#slides {
+    position: relative;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+
+   
+     
+   /* -webkit-transition: opacity 10s;
+    -moz-transition: opacity 10s;
+    -o-transition: opacity 10s;
+    transition: opacity 10s;*/
+}
+
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+    -webkit-animation-name: ease-out;
+    -webkit-animation-duration: 5s;
+    animation-name: ease-out;
+    animation-duration: 5s;
+    transition: opacity s ease-out;
+}
+
+
+   
+
+
+
+
+/* Footer styling*/
+
+.footer_container
+{
+    background: chocolate;
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.footer_container h1
+{
+    text-align: center;
+    margin-top: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.footer_container div
+{
+    margin-left: 41%;
+}
+
+.footer_container input
+{
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: darkgrey;
+    border: 0.5px;
+}
+
+.footer_container button
+{
+    color: chocolate;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 0.5px;
+    background: black;
+
+}
+
+.footer_bottom
+{
+    width: 100%;
+    background: black;
+    height: 100px;
+}
+
+.footer_bottom p
+{
+    color: chocolate;
+    padding-top: 5px;
+
+}
+
+
+/*Social styling*/
+
+.social_container
+{
+    display: flex;
+}
+
+.social_links
+{
+    margin: 10px 0;
+    display: flex;
+
+}
+
+.social_links a
+{
+    color: white;
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    float: right;
+    align-items: center;
+    text-decoration: none;
+    background:chocolate ;
+}
+
+.social_links i
+{
+    color: black;
+    font-size: 20px;
+    background: chocolate;
+    float: right;
+}
+
+.social_links i:hover
+{
+    color: white;
+}
+
+.social_links p
+{
+    float: left;
+}
+
+.social_links span
+{
+    color: white;
+}
+
+.socials
+{
+    float: right;
+    margin-left: 600px;
+}
+
+
+/*About us styling*/
+.about_us_container
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.about_us_box
+{
+    width: 90%;
+    height: 450px;
+}
+
+.about_us_img img
+{
+    width: 100%;
+    height: 400px;
+    margin-left: 100px;
+}
+
+.about_us_para
+{
+    margin-left: 170px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.about_us_para h1
+{
+    color: chocolate;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.about_us_button
+{
+    border-radius: 10px;
+    background-color: chocolate;
+    color: darkgrey;
+    border-radius: 13px;
+    padding: 5px;
+    text-decoration: none;
+    width: 130px;
+    border: none;
+}
+
+/*Menu styling*/
+
+.menu_links a
+{
+    color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    float: right;
+    align-items: center;
+    text-decoration: none;
+    background:chocolate ;
+}
+
+
+
+.menu_links i
+{
+    color: black;
+    font-size: 20px;
+    background: chocolate;
+    float: right;
+
+}
+
+.menu_links i:hover
+{
+    color: white;
+}
+
+/*Cart styling*/
+
+.cart_container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: wheat;
+    height: 400px;
+}
+
+th,td
+{
+    padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.cart_container button
+{
+    color: black;
+    font-size: 20px;
+    background: chocolate;
+    border: none;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    margin-left: 4px;
+}
+
+table input
+{
+    text-align: center;
+    width: 70px;
+}
+
+th
+{
+    background: black;
+    color: white;
+}
+
+caption h1
+{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chocolate;
+}
+
+.cart_container .cart_button
+{
+    border-radius: 10px;
+    background-color: chocolate;
+    color: darkgrey;
+    border-radius: 13px;
+    padding: 5px;
+    text-decoration: none;
+    width: 130px;
+    border: none;
+    display: flex;
+    float: right;
+    padding-left: 20px;
+}
+
+/*Pages on click styling*/
+.navbar1 {
+    overflow: hidden;
+  }
+  
+  .navbar1 a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+ 
+
+  /*Contact Us Styling*/
+
+  .contact1
+{
+    background: wheat;
+    width: 100%;
+    height: 800px;
+    margin-top: 80px;
+}
+
+.contact1 .contact_us
+{
+    color: chocolate;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+
+.contact_container
+{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 200px;
+    margin-top: 30px;
+    background: black;
+    margin-left: 210px;
+    
+}
+
+
+.contact_box
+{
+    width: 50%;
+    height: 200px;
+    color: white;
+    text-align: center;
+    background: chocolate;
+    padding-top: 40px;
+}
+
+.opening_hours h3 p
+{
+    width: 100%;
+    height: 250px;
+    
+}
+
+.contact_para
+{
+    width: 50%;
+    height: 200px;
+    color: white;
+    text-align: center;
+    background: black;
+    padding-top: 40px;
+    
+}
+
+
+/* Map Styling*/
+
+.contact1
+{
+    background: wheat;
+    width: 100%;
+    height: 800px;
+    margin-top: 80px;
+}
+
+.contact1 .contact_us
+{
+    color: chocolate;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+
+.map_container
+{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 350px;
+    margin-top: 30px;
+    background: whitesmoke;
+    margin-left: 210px;
+    
+}
+
+
+.map_box
+{
+    width: 50%;
+    height: 350px;
+    color: white;
+    text-align: center;
+
+    padding-top: 40px;
+}
+
+.opening_hours h3 p
+{
+    width: 100%;
+    height: 250px;
+    
+}
+
+.map_para
+{
+    width: 50%;
+    height: 350px;
+    color: white;
+    background: whitesmoke;
+    padding-top: 40px;
+    margin-left: 20px;
+    
+}
+
+
+.bname
+{
+    width: 45%;
+    height: 30px;
+    border-radius: 25px;
+    text-align: left;
+    padding-left: 10px;
+    border: 1px solid chocolate;
+    
+}
+
+.bemail
+{
+    width: 45%;
+    height: 30px;
+    border-radius: 25px;
+    text-align: left;
+    padding-left: 10px;
+    border: 1px solid chocolate;
+}
+
+.bsubject
+{
+    width: 92%;
+    height: 30px;
+    border-radius: 25px;
+    text-align: left;
+    padding-left: 10px;
+    border: 1px solid chocolate;
+}
+
+.bmessage
+{
+    width: 92%;
+    height: 100px;
+    border-radius: 25px;
+    text-align: left;
+    padding-left: 10px;
+    border: 1px solid chocolate;
+}
+
+.bsend
+{
+    width: 30%;
+    height: 30px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid chocolate;
+    background: chocolate;
+    margin-right: 100px;
+
+}
+
+.opening_hours .bsend a
+{
+    text-decoration: none;
+    color:  black ;
+}
+
+
+/* Jquery Styling*/
+#parent {
+    height: 150px;
+    width: 300px;
+    background: green;
+    margin: 0 auto;
+}
+#child {
+    height: 40px;
+    width: 100px;
+    margin: 0 auto;
+    color: yellow
+}
+
+.main_div  {
+    display: block;
+    border: 1px solid green;
+    color: green;
+    padding: 5px;
+    margin: 15px;
+}
+
+
+.descendants  { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
+
